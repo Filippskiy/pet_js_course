@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<title>Курс JS</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="style.css" />
+	<link rel="icon" href="favicon.ico" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+	<link href="fontawesome/css/all.css" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:700&display=swap&subset=cyrillic"
+		rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet" />
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+	<!-- Header & Navbar -->
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#myPage"><img src="images/logo.png" alt="" height="40px" /></a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#about">О курсе</a></li>
+					<li><a href="#price">Стоимость</a></li>
+					<li><a href="#sign">Записаться</a></li>
+					<li><a href="#contact">Контакты</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="jumbotron">
+		<p>КУРС JAVASCRIPT - <br /></p>
+		<span>изучите классику</span><br />
+		<span>Web-программирования</span>
+	</div>
+	<!-- Content -->
+	<p class="rubric" id="about">Немного о курсе</p>
+	<div class="container slideanim mov_fadeInUp">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-4">
+					<div class="about_table">
+						<p>
+							JavaScript – язык, давно известный web-разработчикам, тем не
+							менее его популярность в последние годы не только не падает, но
+							и стремительно возрастает.Знание языка JavaScript потребуется на
+							каждом шаге разработки web-проектов – от создания эффектного
+							дизайна до серверного программирования. Профессиональное знание
+							и практические навыки JavaScript приравниваются к web-магии
+							верхнего уровня!
+						</p>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="about_table" id="num1">
+						<p>
+							Классика Web-программирования – язык JavaScript также изучается
+							в нашей Web-академии.Начальный уровень знаний, но вполне
+							достаточный для того, чтобы встраивать код JavaScript на
+							страницы сайта и уверенно им манипулировать, добиваясь
+							впечатляющих эффектов, будет достигнут на курсе для клиенской
+							front-end разработки «Front-end web разработка. HTML5, CSS3,
+							JavaScript + WordPress».
+						</p>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="about_table" id="num2">
+						<p>
+							Дополнительные возможности предоставляются на новом курсе
+							Web-академии «JavaScript». Кроме базовых средств JavaScript,
+							будут рассмотрены объектно-ориентированные возможности языка,
+							замыкания, области видимости, также будет изучены популярная
+							библиотека JQuery, произойдет знакомство с популярными
+							фреймворками JavaScript.Приглашаются все желающие погрузиться в
+							магию языка JavaScript!
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container" id="price">
+		<p class="rubric">Cтоимость курса</p>
+		<p class="subrubric">калькулятор стоимости обучения:</p>
+		<div id="rectan">
+			<p>
+				При оплате целого курса действует скидка
+			</p>
+		</div>
+		<form onsubmit="return false;">
+			<input id="calc_input" type="number" value="1" min="2" max="72" oninput="calc()" /><br />
+			<input type="checkbox" id="all" value="10800" onclick="calc()" />
+			<label for="all">
+				<p class="rubric">Стоимость целого курса</p>
+			</label>
+			<hr size="4" color="white" width="500" align="left"/>
+			<output id="res" class="rubric">200</output>
+		</form>
+	</div>
+	<div id="sign"></div>
+	<div class="timer">
+		<p class="rubric">До начала курса осталось:</p>
+		<div class="count">
+			<div class="countd">
+				<span id="days">00</span>
+				ДНЕЙ
+			</div>
+			<div class="countd">
+				<span id="hours">00</span>
+				ЧАСОВ
+			</div>
+			<div class="countd">
+				<span id="minutes">00</span>
+				МИНУТ
+			</div>
+			<div class="countd">
+				<span id="seconds">00</span>
+				СЕКУНД
+			</div>
+		</div>
+	</div>
+
+	<a href="https://forms.gle/8wUsbZiCv61or8EY6" class="btn">
+		<p>Успей записаться!</p>
+	</a>
+	<!-- Footer -->
+
+	<footer class="container footer">
+		<div class="row">
+			<div id="contact" class="container-fluid">
+				<p>
+					<span class="glyphicon glyphicon-map-marker"></span>Адрес: улица
+					Сумская, 47
+				</p>
+				<br /><br />
+				<p>
+					<span class="glyphicon glyphicon-earphone"></span> +38(066)-7-012345
+				</p>
+				<br /><br />
+				<p>
+					<span class="glyphicon glyphicon-envelope"></span> info@kit.kh.ua
+				</p>
+			</div>
+			<div id="googleMap">
+				<iframe
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2564.2416442488006!2d36.23468221571537!3d50.006825879416546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a0e6dffdbb8b%3A0xf209264ca6ae97a1!2z0YPQuy4g0KHRg9C80YHQutCw0Y8sIDQ3LCDQpdCw0YDRjNC60L7Qsiwg0KXQsNGA0YzQutC-0LLRgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwgNjEwMDA!5e0!3m2!1sru!2sua!4v1564837206785!5m2!1sru!2sua"
+					frameborder="0" width="500px" height="350px" style="border: 0" allowfullscreen></iframe>
+			</div>
+			<div class="container social_media">
+				<a href="https://www.facebook.com/">
+					<i class="fab fa-facebook"></i>
+				</a>
+				<a href="https://twitter.com/">
+					<i class="fab fa-twitter"></i>
+				</a>
+				<a href="https://www.instagram.com/">
+					<i class="fab fa-instagram"></i>
+				</a>
+			</div>
+		</div>
+	</footer>
+	<a href="#myPage" title="To Top" id="totop">
+		<span class="glyphicon glyphicon-chevron-up"></span>
+	</a>
+</body>
+
+</html>
